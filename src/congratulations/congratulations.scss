@@ -1,0 +1,65 @@
+.congratulations__wrapper{
+    padding: 108px 35px 48px 35px;
+}
+.congratulations__title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+.congratulations__swiper-wrapper{
+    max-width: 1900px;
+    max-height: 415px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.swiper-slide{
+    text-align: center;
+}
+.swiper-pagination{
+    top: 94%;
+}
+.swiper{
+    padding-bottom: 40px;
+}
+.swiper-pagination-bullet{
+    background: #ffc500;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    z-index: 100;
+    &:after{
+        color: #612B1C;
+    }
+}
+.swiper-button-prev{
+    left: calc(43% - 40px);
+    top: 96%;
+
+    &:after{
+        content: '\2190';
+        font-size: 34px;
+    }
+}
+.swiper-button-next{
+    right: calc(43% - 40px);
+    top: 96%;
+
+    &:after{
+        content: '\2192';
+        font-size: 34px;
+    }
+}
+.swiper-pagination-bullet{
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background: #85371F;
+}
+@media(max-width: 550px){
+    .congratulations__title{
+        font-size: 34px;
+    }
+}

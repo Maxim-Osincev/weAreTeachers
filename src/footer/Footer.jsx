@@ -6,7 +6,7 @@ function Footer() {
     <div className="footer">
       <div className="footer__wrapper">
         <div className="footer__logo">
-          <a href="#"><img src={require("../img/footer/footer__logo.png")} /></a>
+          <a href="#"><img alt="Логотип" title="Логотип" src={require("../img/footer/footer__logo.png")} /></a>
         </div>
         <div className="footer__right">
           <ul className="footer__menu">

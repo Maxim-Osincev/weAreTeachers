@@ -13,13 +13,13 @@ function Postcards() {
   return (
     <div className="postcards">
       <div className="postcards__wrapper">
-        <div className="postcards__title">Поздравь учителя!</div>
+        <h2 className="postcards__title">Поздравь учителя!</h2>
         <div className="postcards__second_title">
           Сделай поздравительную открытку
         </div>
         <div className="postcards__swiper-wrapper">
           <Swiper
-            className='_postcards__swiper'
+            className="_postcards__swiper"
             modules={[Navigation, Pagination]}
             loop={true}
             slidesPerView={3}
@@ -36,44 +36,31 @@ function Postcards() {
                 direction: "vertical",
                 slidesPerView: 1,
                 height: 400,
-                pagination: false,
-                loop: false
+                loop: false,
               },
             }}
           >
             <SwiperSlide className="_swiper-slide">
-              <img
-                src={require("../img/postcards/postcards_slide_1.png")}
-              />
+              <img alt="Открытка" title="Открытка" src={require("../img/postcards/postcards_slide_1.png")} />
             </SwiperSlide>
             <SwiperSlide className="_swiper-slide">
-              <img
-                src={require("../img/postcards/postcards_slide_3.png")}
-              />
+              <img alt="Открытка" title="Открытка" src={require("../img/postcards/postcards_slide_3.png")} />
             </SwiperSlide>
             <SwiperSlide className="_swiper-slide">
-              <img
-                src={require("../img/postcards/postcards_slide_1.png")}
-              />
+              <img alt="Открытка" title="Открытка" src={require("../img/postcards/postcards_slide_1.png")} />
             </SwiperSlide>
             <SwiperSlide className="_swiper-slide">
-              <img
-                src={require("../img/postcards/postcards_slide_3.png")}
-              />
+              <img alt="Открытка" title="Открытка" src={require("../img/postcards/postcards_slide_3.png")} />
             </SwiperSlide>
             <SwiperSlide className="_swiper-slide">
-              <img
-                src={require("../img/postcards/postcards_slide_1.png")}
-              />
+              <img alt="Открытка" title="Открытка" src={require("../img/postcards/postcards_slide_1.png")} />
             </SwiperSlide>
             <SwiperSlide className="_swiper-slide">
-              <img
-                src={require("../img/postcards/postcards_slide_3.png")}
-              />
+              <img alt="Открытка" title="Открытка" src={require("../img/postcards/postcards_slide_3.png")} />
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className="postcards__button">
+        <label htmlFor="add_image" className="postcards__button">
           <svg
             width="25"
             height="24"
@@ -101,7 +88,8 @@ function Postcards() {
             />
           </svg>
           <span>Загрузить фото</span>
-        </div>
+        </label>
+        <input className='input__add_image' type="file" id="add_image"/>
         <div className="postcards__prompt">
           Формат - .jpg, .jpeg, .png, .tiff, .bmp
         </div>

@@ -5,16 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 import "./congratulations.scss";
 
 function Congratulations() {
-  
   return (
     <div className="congratulations">
       <div className="congratulations__wrapper">
-        <div className="congratulations__title">Поздравления</div>
+        <h2 className="congratulations__title">Поздравления</h2>
         <div className="congratulations__swiper-wrapper">
           <Swiper
             modules={[Navigation, Pagination]}
@@ -41,33 +39,35 @@ function Congratulations() {
                 direction: "vertical",
                 slidesPerView: 1,
                 height: 400,
-                pagination: false
               },
             }}
           >
             <SwiperSlide>
               <img
-                src={require("../img/congratulations/congratulations_slide_1.png")}
+                alt="Поздравление"
+                title="Поздравление"
+                src={require("../img/congratulations/congratulations_slide_photo_1.png")}
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src={require("../img/congratulations/congratulations_slide_2.png")}
+                alt="Поздравление"
+                title="Поздравление"
+                src={require("../img/congratulations/congratulations_slide_photo_2.png")}
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src={require("../img/congratulations/congratulations_slide_1.png")}
+                alt="Поздравление"
+                title="Поздравление"
+                src={require("../img/congratulations/congratulations_slide_photo_3.png")}
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src={require("../img/congratulations/congratulations_slide_3.png")}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={require("../img/congratulations/congratulations_slide_4.png")}
+                alt="Поздравление"
+                title="Поздравление"
+                src={require("../img/congratulations/congratulations_slide_photo_4.png")}
               />
             </SwiperSlide>
           </Swiper>

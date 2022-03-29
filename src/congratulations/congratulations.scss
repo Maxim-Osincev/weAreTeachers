@@ -1,5 +1,5 @@
 .congratulations__wrapper{
-    padding: 108px 35px 48px 35px;
+    padding: 108px 0 48px 0;
 }
 .congratulations__title{
     font-family: 'Roboto Slab', serif;
@@ -14,15 +14,30 @@
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-}
-.swiper-slide{
-    text-align: center;
-}
-.swiper-pagination{
-    top: 94%;
-}
-.swiper{
-    padding-bottom: 40px;
+
+    .swiper-slide{
+        position: relative;
+        text-align: center;
+        background: url('../img/congratulations/congratulations_swiper_frame.png') no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 380px;
+        padding: 0 10px;
+
+        img{
+            position: absolute;
+            left: 10px;
+            height: 265px;
+        }
+    }
+    .swiper-pagination{
+        top: 94%;
+    }
+    .swiper{
+        padding-bottom: 40px;
+    }
 }
 .swiper-pagination-bullet{
     background: #ffc500;
@@ -61,5 +76,46 @@
 @media(max-width: 550px){
     .congratulations__title{
         font-size: 34px;
+    }
+}
+@media(max-width: 484px){
+    .congratulations__wrapper{
+        
+
+        .swiper-button-prev,
+        .swiper-button-next{
+            display: none;
+        }
+
+        .congratulations__swiper-wrapper{
+            overflow: hidden;
+            padding: 0 0px 0 20px;
+
+            & *{
+                overflow: visible;
+            }
+        }
+
+        .swiper{
+            max-height: 400px;
+        }
+
+        .swiper-pagination{
+            top: 200px;
+            left: -15px;
+            width: 10px;
+        }
+        .swiper-slide{
+            background-size: auto;
+
+            img{
+                position: absolute;
+                left: 18px;
+                top: 60px;
+                height: 265px;
+                max-width: 350px;
+                width: 100%;
+            }
+        }
     }
 }

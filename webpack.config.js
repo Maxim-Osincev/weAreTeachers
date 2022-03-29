@@ -20,9 +20,6 @@ module.exports = {
             {
               test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
               loader: "file-loader",
-              options: {
-                name: "[name].[ext]",
-              },
             },
             {
               test: /\.(jpg|png|svg|jpeg|gif)$/,
@@ -32,7 +29,8 @@ module.exports = {
     },
     output : { 
         clean : true,
-        filename : "bundle.js"
+        filename : "bundle.js",
+        assetModuleFilename: 'assets/images/[name][ext]'
     },
     plugins: [
         new HtmlWebpackPlugin({
